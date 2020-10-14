@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import "https://bibliotik.me/static/makeup.css";
 
 body {
@@ -20,3 +21,287 @@ a:hover {
     text-decoration: underline;
     color: lighten(#8be9fd, 50%);
 }
+
+
+.ann_text {
+	margin-left: 1.5em;
+}
+
+span.block_li {
+	float: left;
+	clear: left;
+	text-align: left;
+	width: 10em;
+}
+
+span.block_li_data {
+	float: left;
+	text-align: left;
+}
+
+#ratio_watch_notice {
+	color: #ff5555;
+	font-weight:bold;
+}
+
+#header_nav_search {
+    color: #6272a4;
+    text-align: right;
+    float: right;
+    padding-bottom: 2px;
+    margin: 0;
+}
+
+.forum_controls {
+	list-style-type: none;
+}
+
+#pre_header {
+    margin: 20px 0 3px 0;
+    overflow: hidden;
+    font-size: 12px;
+    vertical-align: top;
+    color: #6272a4;
+}
+
+#pre_header_status  {
+    list-style-type:none;
+    text-align: left;
+    float: left;
+    margin: 0;
+    padding:0;
+}
+
+#pre_header_status li:first-child, #pre_header_status li:first-child + li {
+    float: left;
+    margin-right:0.5em;
+    padding: 0 6px 0 0;
+    background: transparent url(/static/dot.gif) no-repeat center right;
+}
+
+#pre_header_status li:nth-child(4) {
+	clear: left;
+}
+
+#pre_header_status li {
+    float: left;
+    margin-right:0.5em;
+    padding: 0;
+}
+
+/*
+#pre_header_nav {
+    list-style-type:none;
+    text-align: right;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+*/
+
+#pre_header_nav li {
+    float: right;
+    margin:0;
+    padding: 0 6px;
+    background: transparent url(/static/dot.gif) no-repeat center right;
+}
+
+#pre_header_nav li:first-child, #pre_header_nav li:nth-last-child(3) {
+    background: none;
+    padding: 0 0 0 6px;
+}	
+
+#pre_header_nav li:nth-last-child(3) {
+	clear: right;
+}
+
+#search_header {
+    width: 250px;
+    color: #6272a4;
+}
+
+blockquote #padded {
+	padding:6px;
+	border:1px;
+	border-style:dotted;
+}
+
+legend {
+	color: red;
+}
+
+.markdown blockquote {
+    margin:0;
+    padding:4px;
+    border:1px dotted #44475a;
+}
+
+/* BBCode images in posts, descriptions, etc. */
+img.imageResize, .markdown img { max-width:800px; }
+
+/* Minimize reflowing while collection covers are loading */
+.collectionCover { width:80px; min-height:120px; }
+
+.formatMark {
+    visibility: hidden;
+    height:32px;
+    position:absolute;
+    left:-2px;
+    top:-1px;
+    z-index:1;
+}
+ 
+.sidebar_hr {
+    margin-top: -1em;
+    border: 1px dotted;
+    height: 0px;
+}
+ .forumsearch {
+    float: right;
+}
+
+#forumchecklist {
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+}
+
+.no_notifications {
+    font-style: oblique;
+    color: #ff5555;
+}
+
+.icon_applications {
+    display: block;
+    background: url('/static/icons/Applications.png') no-repeat center center !important;
+    width: 32px;
+    height: 32px;
+}
+
+.icon_articles {
+    display: block;
+    background: url('/static/icons/Articles.png') no-repeat center center !important;
+    width: 32px;
+    height: 32px;
+}
+
+.icon_audiobooks {
+    display: block;
+    background: url('/static/icons/Audiobooks.png') no-repeat center center !important;
+    width: 32px;
+    height: 32px;
+}
+
+.icon_comics {
+    display: block;
+    background: url('/static/icons/Comics.png') no-repeat center center !important;
+    width: 32px;
+    height: 32px;
+}
+
+.icon_ebooks {
+    display: block;
+    background: url('/static/icons/Ebooks.png') no-repeat center center !important;
+    width: 32px;
+    height: 32px;
+}
+
+.icon_journals {
+    display: block;
+    background: url('/static/icons/Journals.png') no-repeat center center !important;
+    width: 32px;
+    height: 32px;
+}
+
+.icon_magazines {
+    display: block;
+    background: url('/static/icons/Magazines.png') no-repeat center center !important;
+    width: 32px;
+    height: 32px;
+}
+
+.postContent table, #description table {
+	margin-left:1em;
+	border-collapse:collapse;
+}
+
+.postContent th, #description th {
+	background-color:#f8f8f2;
+	font-weight:bold;
+}
+
+.postContent td, .postContent th, #description td, #description th {
+	border:1px solid #44475a;
+	padding: 0.25em;
+}
+
+/* Flag snatched/seeding status on torrent details */
+div.snatched li.details_snatches:after { content: " (Snatched)"; }
+div.seeding  li.details_peers:after    { content: " (Seeding)"; }
+div.leeching li.details_peers:after    { content: " (Leeching)"; }
+
+/* Arrows next to the seed/leech counts on a torrent row */
+tr.snatched a.snatches:after { color: blue; content: "\00a0\002714"; /*non-breaking space and checkmark*/}
+tr.snatched td:hover a.snatches:before {color: inherit; content: "\002714\00a0Snatched"; font-size: 100%; display:block; position:absolute; top:-2em; left:-3em; background:#fffaf0; border:1px solid #DCA; padding:4px; opacity:.8;}
+tr.snatched td:hover a.snatches {position:relative;}
+
+tr.seeding  a.seeders:after { color: green; content: "\00a0▲"; }
+tr.seeding td:hover a.seeders:before {color: inherit; content: "▲\00a0Seeding"; font-size: 100%; display:block; position:absolute; top:-2em; left:-3em; background:#fffaf0; border:1px solid #DCA; padding:4px; opacity:.8;}
+tr.seeding td:hover a.seeders {position:relative;}
+
+tr.leeching a.leechers:after { color: red; content: "\00a0▼"; }
+tr.leeching td:hover a.leechers:before {color: inherit; content: "▼\00a0Leeching"; font-size: 100%; display:block; position:absolute; top:-2em; left:-3em; background:#fffaf0; border:1px solid #DCA; padding:4px; opacity:.8;}
+tr.leeching td:hover a.leechers {position:relative;}
+
+/* Retail stars */
+tr.retail .title:before {color:gold; content: "\002605\00a0"; font-size: 120%;}
+tr.retail td:hover .title:after {color: inherit; content: "\002605\00a0Retail"; z-index:5; font-size: 100%; display:block; position:absolute; top:-1em; left:-5em; background:#fffaf0; border:1px solid #DCA; padding:4px; opacity:.8;}
+tr.retail td:hover .title {position:relative;}
+
+/* Color stars by format (SAMPLE)
+tr.retail.epub-format .title:before {color:green;}
+tr.retail.mobi-format .title:before {color:blue;}
+tr.retail.azw3-format .title:before {color:blue;}
+tr.retail.pdf-format .title:before {color:red;}
+*/
+
+.markRuleCell {background-color: #f8f8f8; border: 1px solid #ccc; margin: 0; padding: 6px 13px}
+.editor-toolbar { background-color: #ffffff; }
+.Ffield .editor-toolbar a { float: none; }
+.editor-preview .announcement, .editor-preview-side .announcement { padding: 10px 20px; }
+a.anchor { margin-left: -25px; font-size:20px; padding-right:4px; visibility:hidden; }
+.CodeMirror:not(.CodeMirror-fullscreen), .editor-toolbar:not(.fullscreen) { max-width: 48em; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { visibility: visible; }
+.qtip  {max-width:100%}
+.qtip img.cover-zoom { border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; -moz-border-radius:5px; }
+.qtip-content { padding: 9px; }
+html.have-js .hide-if-js, input.toggling, input.toggling:not(:checked)+.toggling {display: none}
+
+span.doBookmark {
+    /* make the span act more like a table cell */
+    display: inline-block;
+    padding: 5px 1px 0px 1px;
+}
+
+.doBookmark {
+    cursor: pointer;
+    background-image: url(/static/icons/bookmark_add.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    min-height: 16px;
+    min-width: 16px;
+}
+
+tr.torrent.bookmarked td.doBookmark, div.torrent.bookmarked span.doBookmark {
+    background-image: url(/static/icons/bookmark_rm.png);
+}
+
+.doBookmark.loading, tr.torrent.bookmarked td.doBookmark.loading, div.torrent.bookmarked span.doBookmark.loading {
+    cursor: progress;
+    background-image: url(/static/icons/loading.gif);
+}
+
+#similar-titles { padding-top: 1em; clear:both; }
+
+.usercontent-right { float: right; }
+img.usercontent-requestcover { margin: 0 0 1em 1.5em; float: right; }
