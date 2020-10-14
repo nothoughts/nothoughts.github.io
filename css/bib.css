@@ -5,3 +5,18 @@ body {
     color: #eaeaea;
     font-family: 'Open Sans', sans-serif;	
 }
+
+body, select, input, textarea {
+    font-size: 14px;
+}
+
+a {
+    color: #8be9fd;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lighten(#8be9fd, 50%);
+}
